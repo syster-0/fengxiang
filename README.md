@@ -145,6 +145,20 @@ git add -A && git commit -m "..."
 git remote add origin <你的仓库地址> && git push -u origin master
 ```
 
+**自感知更新（专家自己会意识到需要拉取）**：
+
+包内置 `tvop repo` 子命令，专家会话开始跑 `tvop doctor` 即可见分发远端；发送方
+推送增量后，接收方侧：
+
+```bash
+tvop repo status   # 联网比对：报告落后/领先几个提交，落后时提示 pull
+tvop repo pull     # 安全拉取：工作区脏则拒绝；仅 fast-forward 不产生合并
+                   # 拉取后提示 tvop okf reindex && okf validate && govern recompute
+```
+
+知识库增量（wiki/、sources/）随 git 一起走 —— 发送方蒸馏归档后 `git push`，
+接收方专家运行 `tvop repo status` 就能发现并拉取，实现「持续生长」的跨机同步。
+
 **接收方（任意系统）**：
 
 ```bash
