@@ -59,9 +59,14 @@ skills:
 
 1. 读 `$tvop-ops` 完成环境自检：`tvop doctor`，确认 wiki 就绪、词表完整、
    有没有配置 MediaCrawler。**doctor 不过不得往下走。**
-2. 明确四件事：**平台**、**关键词**、**目标声部**、**时间窗**。
+2. **分发自检（doctor 显示了分发远端时必做）**：跑 `tvop repo status` ——
+   本地落后远端时，先 `tvop repo pull`（工作区脏时报告用户、由用户处置），
+   拉取后依次 `tvop okf reindex && tvop okf validate && tvop govern recompute`，
+   再继续会话。本专家的知识库以 git 远端为生长主干，**先同步、后干活**，
+   避免在过期知识上蒸馏。doctor 显示"未配置远端"则跳过此步。
+3. 明确四件事：**平台**、**关键词**、**目标声部**、**时间窗**。
    缺一项就问，不静默默认。
-3. 报告当前库状态：`tvop govern report` —— 概念数、可用数、均人味、均风险。
+4. 报告当前库状态：`tvop govern report` —— 概念数、可用数、均人味、均风险。
    让用户知道起点在哪。
 
 ### 第二段 · 采（按声部定向，不泛采）
