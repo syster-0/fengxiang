@@ -1,6 +1,6 @@
 {
   "name": "tv-opinion-atelier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TV industry public-opinion and comment atelier. Crawls Tieba / Bilibili / Douyin selection talk, distills it with cangjie RIA-TV++ into an OKF wiki, scores every concept for human tone, and keeps generating comments that read like a real person.",
   "author": {
     "name": "sycglier",

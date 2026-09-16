@@ -138,12 +138,29 @@ zip -r tv-opinion-atelier.zip tv-opinion-atelier/ -x '*/\.git/*'
 wiki 知识库（48 概念 + source-map + tests + log）、TCL 语料、Agent/Skill、头像、
 内嵌 MediaCrawler 源码快照（见 `third_party/MediaCrawler/VENDORED.md`）。
 
+**分发通道**（当前）：
+
+| 项 | 值 |
+|---|---|
+| 仓库 | `https://github.com/syster-0/fengxiang.git` |
+| 默认分支 | `main`（本地开发分支 `master`，推送映射 `master:main`） |
+| 性质 | 临时公共仓，用于一次性分发；**分发完成后可能删仓**。删仓后改用离线包 `tv-opinion-atelier.zip`，或另建新仓并 `git remote set-url origin <新地址>`（`tvop repo` 会自动跟随新远端） |
+| 完整分发记录 | 见包内 `DISPATCH.md` |
+
 **发送方**：
 
 ```bash
+# 方式一：一键建仓推送（令牌只走环境变量，推完自动从 remote URL 抹除）
+GH_USER=<用户名> GH_TOKEN=<token> bash scripts/publish.sh
+
+# 方式二：已有远端，直接推
 git add -A && git commit -m "..." 
-git remote add origin <你的仓库地址> && git push -u origin master
+git push origin master:main            # 本地 master → 远端 main
 ```
+
+推送凭据要求：fine-grained PAT 需 **Contents: Read and write**；或走 GitHub 设备流
+（scope=repo，无需令牌）。注意 WorkBuddy 的 GitHub 连接器是 Copilot 只读授权，
+**不能**用于推送。
 
 **自感知更新（专家自己会意识到需要拉取）**：
 
@@ -163,13 +180,15 @@ tvop repo pull     # 安全拉取：工作区脏则拒绝；仅 fast-forward 不
 
 ```bash
 # Linux / macOS
-git clone <仓库地址> tv-opinion-atelier && cd tv-opinion-atelier
-bash scripts/bootstrap.sh          # 加 --cn 走国内镜像（gh-proxy/goproxy/清华PyPI/npmmirror）
+git clone https://github.com/syster-0/fengxiang.git tv-opinion-atelier && cd tv-opinion-atelier
+bash scripts/bootstrap.sh --cn       # --cn 走国内镜像（gh-proxy/goproxy/清华PyPI/npmmirror）
 
 # Windows (PowerShell)
-git clone <仓库地址> tv-opinion-atelier; cd tv-opinion-atelier
+git clone https://github.com/syster-0/fengxiang.git tv-opinion-atelier; cd tv-opinion-atelier
 powershell -ExecutionPolicy Bypass -File scripts\bootstrap.ps1 -CN
 ```
+
+（仓库若已被删除，改为解压 `tv-opinion-atelier.zip` 后执行同样的 bootstrap 命令。）
 
 引导脚本幂等，五步自动完成：① 按平台挑选 `bin/tvop-<os>-<arch>` 预编译二进制
 （无匹配时回退 `go build`）→ ② 缺失时克隆 MediaCrawler → ③ 建 Python venv
