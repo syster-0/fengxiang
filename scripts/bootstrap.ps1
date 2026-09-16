@@ -57,22 +57,34 @@ else {
 # ---- 3. Python 虚拟环境 ----
 Say "步骤 3/5：Python 环境（jieba 需要 setuptools<70 构建约束）"
 Set-Location $MC
-$venvPy = ".venv\Scripts\python.exe"
-if (-not (Test-Path $venvPy)) {
-  if (Get-Command uv -ErrorAction SilentlyContinue) {
-    uv venv --seed .venv
+# 健康判据：venv 存在且关键依赖可导入 —— 半成品 venv（中断残留）自动进入修复分支。
+function Test-VenvHealthy {
+  if (-not (Test-Path ".venv\Scripts\python.exe")) { return $false }
+  & .venv\Scripts\python.exe -c "import typer, fastapi, jieba, playwright, httpx" 2>$null
+  return ($LASTEXITCODE -eq 0)
+}
+if (-not (Test-VenvHealthy)) {
+  if (-not (Test-Path ".venv\Scripts\python.exe")) {
+    if (Get-Command uv -ErrorAction SilentlyContinue) {
+      uv venv --seed .venv
+      "setuptools<70`nwheel<0.46" | Out-File -Encoding ascii .build-constraints.txt
+      $env:PIP_CONSTRAINT = "$MC\.build-constraints.txt"
+      .venv\Scripts\pip.exe install -r requirements.txt
+    }
+    else {
+      python -m venv .venv
+      .venv\Scripts\pip.exe install -U "pip<24.1" "setuptools<70" "wheel<0.46"
+      .venv\Scripts\pip.exe install -r requirements.txt
+    }
+  }
+  else {
     "setuptools<70`nwheel<0.46" | Out-File -Encoding ascii .build-constraints.txt
     $env:PIP_CONSTRAINT = "$MC\.build-constraints.txt"
     .venv\Scripts\pip.exe install -r requirements.txt
   }
-  else {
-    python -m venv .venv
-    .venv\Scripts\pip.exe install -U "pip<24.1" "setuptools<70" "wheel<0.46"
-    .venv\Scripts\pip.exe install -r requirements.txt
-  }
-  Say "  venv 建好"
+  Say "  venv 建好 / 已修复"
 }
-else { Say "  已存在，跳过" }
+else { Say "  已存在且健康，跳过" }
 
 # ---- 4. 浏览器内核 ----
 Say "步骤 4/5：Playwright Chromium"

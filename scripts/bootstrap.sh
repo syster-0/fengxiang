@@ -68,25 +68,34 @@ fi
 # ---- 3. Python 虚拟环境 ----
 say "步骤 3/5：Python 环境（jieba 需要 setuptools<70 构建约束）"
 cd "$MC"
-if [ ! -x ".venv/bin/python" ] && [ ! -x ".venv/Scripts/python.exe" ]; then
-  if command -v uv >/dev/null 2>&1; then
-    uv venv --seed .venv
-    PIP=".venv/bin/pip"; [ "$OS" = windows ] && PIP=".venv/Scripts/pip.exe"
-    printf 'setuptools<70\nwheel<0.46\n' > .build-constraints.txt
-    if [ "$OS" = windows ]; then
-      env PIP_CONSTRAINT=.build-constraints.txt "${PIP}" install -r requirements.txt
-    else
-      env PIP_CONSTRAINT="$MC/.build-constraints.txt" "$PIP" install -r requirements.txt
-    fi
+# 健康判据：venv 存在且关键依赖可导入 —— 半成品 venv（中断残留）自动进入修复分支。
+venv_healthy() {
+  [ -x ".venv/bin/python" ] || [ -x ".venv/Scripts/python.exe" ] || return 1
+  .venv/bin/python -c "import typer, fastapi, jieba, playwright, httpx" >/dev/null 2>&1 \
+    || .venv/Scripts/python.exe -c "import typer, fastapi, jieba, playwright, httpx" >/dev/null 2>&1
+}
+install_deps() {
+  PIP=".venv/bin/pip"; [ "$OS" = windows ] && PIP=".venv/Scripts/pip.exe"
+  printf 'setuptools<70\nwheel<0.46\n' > .build-constraints.txt
+  if [ "$OS" = windows ]; then
+    env PIP_CONSTRAINT=.build-constraints.txt "$PIP" install -r requirements.txt
   else
-    python3 -m venv .venv
-    PIP=".venv/bin/pip"; [ "$OS" = windows ] && PIP=".venv/Scripts/pip.exe"
-    "$PIP" install -U "pip<24.1" "setuptools<70" "wheel<0.46"
-    "$PIP" install -r requirements.txt
+    env PIP_CONSTRAINT="$MC/.build-constraints.txt" "$PIP" install -r requirements.txt
   fi
-  say "  venv 建好"
+}
+if ! venv_healthy; then
+  if [ ! -x ".venv/bin/python" ] && [ ! -x ".venv/Scripts/python.exe" ]; then
+    if command -v uv >/dev/null 2>&1; then
+      uv venv --seed .venv
+    else
+      python3 -m venv .venv
+      ".venv/bin/pip" install -U "pip<24.1" "setuptools<70" "wheel<0.46"
+    fi
+  fi
+  install_deps
+  say "  venv 建好 / 已修复"
 else
-  say "  已存在，跳过"
+  say "  已存在且健康，跳过"
 fi
 
 # ---- 4. 浏览器内核 ----
