@@ -79,6 +79,8 @@ func run(args []string) int {
 		return cmdGovern(rest)
 	case "crawl":
 		return cmdCrawl(rest)
+	case "repo":
+		return cmdRepo(rest)
 	case "distill":
 		return cmdDistill(rest)
 	case "serve":
@@ -107,6 +109,7 @@ func usage() {
   weight explain <概念 ID>  权重因子拆解
   govern <audit|promote|decay|recall|recompute|report>
   crawl <platforms|plan|run|ingest|select|feed|tension>
+  repo <status|pull>      分发自感知：检查远端更新 / 安全拉取（ff-only）
   distill plan            生成 RIA-TV++ 蒸馏计划
   serve [--addr :8080]    HTTP 服务
   mcp                     MCP 服务（stdio）
@@ -213,6 +216,22 @@ func cmdDoctor(args []string) int {
 	}
 	fmt.Printf("  词表        : %d 类型 / %d 声部 / %d 条人味规则 / %d 条合规红线\n",
 		len(spec.AllTypes()), len(spec.Voices), len(spec.TasteOperators), len(spec.RiskPatterns))
+	// 分发自感知：报告 git 同步状态，提醒接收方拉取知识库增量。
+	if w, werr := openWiki(); werr == nil {
+		if repo := w.RepoRoot(); repo != "" {
+			if _, statErr := os.Stat(filepath.Join(repo, ".git")); statErr == nil {
+				remote, rerr := gitRun(repo, 5*time.Second, "remote", "get-url", "origin")
+				if rerr == nil && remote != "" {
+					fmt.Println("  分发远端  :", remote)
+					fmt.Println("  同步检查  : tvop repo status（落后远端时会提示 tvop repo pull）")
+				} else {
+					fmt.Println("  分发远端  : 未配置（git 分发后自动出现；zip 直解无更新通道）")
+				}
+			} else {
+				fmt.Println("  分发通道  : 非 git 仓库（无增量更新；建议用 git clone 安装）")
+			}
+		}
+	}
 	return exitOK
 }
 
