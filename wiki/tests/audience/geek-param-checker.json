@@ -1,0 +1,17 @@
+{
+  "concept": "audience/geek-param-checker",
+  "triggers": [
+    "写给数码党看的评论",
+    "参数党会追问什么",
+    "怎么让懂行的人信"
+  ],
+  "decoys": [
+    "写给装修家庭看的",
+    "怎么写短评引战",
+    "怎么写高赞金句"
+  ],
+  "negatives": [
+    "audience/renovation-family",
+    "audience/mainstream-upgrader"
+  ]
+}

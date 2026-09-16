@@ -1,0 +1,17 @@
+{
+  "concept": "signal/templated-burst",
+  "triggers": [
+    "声量突然涨了要不要处理",
+    "相似度188是什么意思",
+    "怎么判断是不是批量生产"
+  ],
+  "decoys": [
+    "12315 记录怎么核实",
+    "小红书安装帖怎么定性",
+    "高价吐槽要不要回应"
+  ],
+  "negatives": [
+    "tension/industry-decline-vs-brand-growth",
+    "decision/not-rebut-industry-decline"
+  ]
+}

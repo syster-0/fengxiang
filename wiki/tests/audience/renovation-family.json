@@ -1,0 +1,17 @@
+{
+  "concept": "audience/renovation-family",
+  "triggers": [
+    "写装修期选电视的内容",
+    "给刚装完修的人推荐",
+    "挂墙效果怎么讲"
+  ],
+  "decoys": [
+    "写给数码党的参数文",
+    "怎么写引战评论",
+    "参数怎么拆解"
+  ],
+  "negatives": [
+    "audience/geek-param-checker",
+    "audience/ads-exhausted-senior"
+  ]
+}

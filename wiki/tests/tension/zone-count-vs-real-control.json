@@ -1,0 +1,17 @@
+{
+  "concept": "tension/zone-count-vs-real-control",
+  "triggers": [
+    "分区数是不是虚标",
+    "分区多就一定好吗",
+    "为什么标几千分区看着还是发灰"
+  ],
+  "decoys": [
+    "峰值亮度是不是虚标",
+    "色域标 100% 是真的吗",
+    "电视刷新率多少够用"
+  ],
+  "negatives": [
+    "spec/wanxiang-zone-inflation",
+    "tension/spec-sheet-vs-eyes"
+  ]
+}

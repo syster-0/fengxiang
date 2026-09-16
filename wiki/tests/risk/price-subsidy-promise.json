@@ -1,0 +1,17 @@
+{
+  "concept": "risk/price-subsidy-promise",
+  "triggers": [
+    "能不能写保价双11",
+    "可以承诺到手价吗",
+    "国补20%能直接这么说吗"
+  ],
+  "decoys": [
+    "怎么描述促销氛围",
+    "以旧换新怎么解释",
+    "尺寸和价格怎么对应"
+  ],
+  "negatives": [
+    "risk/fabricated-stat",
+    "risk/absolute-superlative"
+  ]
+}

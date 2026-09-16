@@ -1,0 +1,17 @@
+{
+  "concept": "pattern/douyin-verdict-opener",
+  "triggers": [
+    "短评怎么起手才有冲击力",
+    "怎么一句话说完结论",
+    "评论怎么开头才有人看"
+  ],
+  "decoys": [
+    "长贴怎么分段",
+    "怎么补限定条件",
+    "怎么把参数讲严谨"
+  ],
+  "negatives": [
+    "pattern/geek-added-caveat",
+    "pattern/tieba-question-chain"
+  ]
+}

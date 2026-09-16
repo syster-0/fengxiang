@@ -1,0 +1,17 @@
+{
+  "concept": "signal/regulator-record",
+  "triggers": [
+    "12315 出现记录怎么处理",
+    "监管口径风险怎么评估",
+    "这条投诉要不要对外回应"
+  ],
+  "decoys": [
+    "小红书安装帖怎么核实",
+    "行业衰退叙事怎么应对",
+    "高价吐槽要不要回应"
+  ],
+  "negatives": [
+    "signal/install-complaint-cluster",
+    "risk/absolute-superlative"
+  ]
+}

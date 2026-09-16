@@ -1,0 +1,17 @@
+{
+  "concept": "audience/mainstream-upgrader",
+  "triggers": [
+    "写换代人群的推荐",
+    "五千到一万预算怎么选",
+    "国补换机怎么写"
+  ],
+  "decoys": [
+    "写给发烧友的旗舰评测",
+    "怎么拆解分区参数",
+    "怎么写引战短评"
+  ],
+  "negatives": [
+    "audience/geek-param-checker",
+    "audience/renovation-family"
+  ]
+}

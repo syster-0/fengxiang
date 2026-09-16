@@ -1,0 +1,17 @@
+{
+  "concept": "tension/spec-sheet-vs-eyes",
+  "triggers": [
+    "参数表能信吗",
+    "为什么参数涨了观感没涨",
+    "买电视该信参数还是信眼睛"
+  ],
+  "decoys": [
+    "电视刷新率多少够用",
+    "HDMI 2.1 有必要吗",
+    "4K 和 8K 区别大吗"
+  ],
+  "negatives": [
+    "tension/zone-count-vs-real-control",
+    "pattern/consensus-anti-param"
+  ]
+}

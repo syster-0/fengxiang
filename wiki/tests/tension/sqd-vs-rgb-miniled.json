@@ -1,0 +1,17 @@
+{
+  "concept": "tension/sqd-vs-rgb-miniled",
+  "triggers": [
+    "SQD 和 RGB 到底哪个好",
+    "三颗灯珠一组是不是真的",
+    "Mini LED 两条路线怎么选"
+  ],
+  "decoys": [
+    "OLED 和 Mini LED 哪个好",
+    "QD-Mini LED 和 QLED 的区别",
+    "电视买多大尺寸合适"
+  ],
+  "negatives": [
+    "tension/zone-count-vs-real-control",
+    "glossary/miniled-three-lines"
+  ]
+}

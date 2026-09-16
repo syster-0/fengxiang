@@ -1,0 +1,17 @@
+{
+  "concept": "voice/douyin-conflict",
+  "triggers": [
+    "写一条抖音风格的引战评论",
+    "用极短强冲突的语气说旗舰电视",
+    "写个高对立的短评"
+  ],
+  "decoys": [
+    "写一条贴吧长贴",
+    "写一句高赞金句",
+    "写一段 B 站参数拆解"
+  ],
+  "negatives": [
+    "voice/hot-consensus",
+    "voice/tieba-long"
+  ]
+}

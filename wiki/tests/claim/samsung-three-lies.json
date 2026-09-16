@@ -1,0 +1,17 @@
+{
+  "concept": "claim/samsung-three-lies",
+  "triggers": [
+    "TCL 告三星是怎么回事",
+    "三大谎言是说什么",
+    "三星 Mini LED 是普通电视吗"
+  ],
+  "decoys": [
+    "Q10M Ultra 是什么技术",
+    "海信押的哪条路线",
+    "SQD 和 RGB 哪个好"
+  ],
+  "negatives": [
+    "risk/competitor-defamation",
+    "signal/spec-backfire"
+  ]
+}

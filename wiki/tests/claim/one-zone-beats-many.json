@@ -1,0 +1,17 @@
+{
+  "concept": "claim/one-zone-beats-many",
+  "triggers": [
+    "一区顶多区是什么意思",
+    "一个万象分区顶几个RGB分区",
+    "分区数为什么不能直接比"
+  ],
+  "decoys": [
+    "峰值亮度为什么要看持久",
+    "色域 100% 是什么口径",
+    "分区多就一定画质好吗"
+  ],
+  "negatives": [
+    "spec/wanxiang-zone-inflation",
+    "claim/global-100-bt2020"
+  ]
+}

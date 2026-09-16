@@ -1,0 +1,17 @@
+{
+  "concept": "audience/ads-exhausted-senior",
+  "triggers": [
+    "写无开机广告的卖点",
+    "给老人选电视怎么写",
+    "被广告劝退的人怎么打动"
+  ],
+  "decoys": [
+    "怎么写分区参数",
+    "怎么写引战评论",
+    "旗舰值不值怎么写"
+  ],
+  "negatives": [
+    "audience/mainstream-upgrader",
+    "tension/industry-decline-vs-brand-growth"
+  ]
+}

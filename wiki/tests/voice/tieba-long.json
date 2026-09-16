@@ -1,0 +1,17 @@
+{
+  "concept": "voice/tieba-long",
+  "triggers": [
+    "写一条贴吧风格的长评",
+    "用追楼党语气分析 Q9M Pro",
+    "帮我写个选购长贴"
+  ],
+  "decoys": [
+    "写一条抖音短评",
+    "写一段 B 站测评解说",
+    "写一句高赞金句"
+  ],
+  "negatives": [
+    "voice/hot-consensus",
+    "voice/douyin-conflict"
+  ]
+}

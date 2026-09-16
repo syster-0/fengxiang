@@ -1,0 +1,17 @@
+{
+  "concept": "pattern/consensus-anti-param",
+  "triggers": [
+    "写一条转发率高的评论",
+    "怎么安慰看不懂参数的买家",
+    "怎么写一句不站队的共识"
+  ],
+  "decoys": [
+    "怎么写参数拆解",
+    "怎么写引战短评",
+    "怎么写长贴分析"
+  ],
+  "negatives": [
+    "pattern/geek-added-caveat",
+    "voice/douyin-conflict"
+  ]
+}

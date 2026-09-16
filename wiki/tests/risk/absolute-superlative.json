@@ -1,0 +1,17 @@
+{
+  "concept": "risk/absolute-superlative",
+  "triggers": [
+    "这段评论有没有违规风险",
+    "帮我检查用词安不安全",
+    "能不能说这是乱收费"
+  ],
+  "decoys": [
+    "怎么把参数写得更吸引人",
+    "标题怎么起更有点击率",
+    "这段话读起来顺不顺"
+  ],
+  "negatives": [
+    "risk/fabricated-stat",
+    "risk/competitor-defamation"
+  ]
+}

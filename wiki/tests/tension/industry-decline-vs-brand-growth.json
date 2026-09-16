@@ -1,0 +1,17 @@
+{
+  "concept": "tension/industry-decline-vs-brand-growth",
+  "triggers": [
+    "电视行业是不是不行了",
+    "开机率跌破40%怎么看",
+    "康佳退市了TCL会不会也"
+  ],
+  "decoys": [
+    "面板价格走势",
+    "Mini LED 渗透率多少",
+    "TCL 和索尼合资是干什么的"
+  ],
+  "negatives": [
+    "decision/not-rebut-industry-decline",
+    "signal/templated-burst"
+  ]
+}

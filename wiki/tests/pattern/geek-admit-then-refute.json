@@ -1,0 +1,17 @@
+{
+  "concept": "pattern/geek-admit-then-refute",
+  "triggers": [
+    "怎么在夸自己技术时不显得像水军",
+    "写个有说服力的对比评论",
+    "怎么补短板才不扣分"
+  ],
+  "decoys": [
+    "怎么写一句金句",
+    "怎么把标题写得更吸引人",
+    "怎么描述用户抱怨"
+  ],
+  "negatives": [
+    "pattern/consensus-anti-param",
+    "pattern/douyin-verdict-opener"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "concept": "tension/flagship-price-vs-value",
+  "triggers": [
+    "六万块的电视值不值",
+    "高端电视是不是智商税",
+    "X11L 凭什么卖这么贵"
+  ],
+  "decoys": [
+    "国补后多少钱",
+    "以旧换新怎么算",
+    "电视多久换一次"
+  ],
+  "negatives": [
+    "tension/spec-sheet-vs-eyes",
+    "risk/fabricated-stat"
+  ]
+}

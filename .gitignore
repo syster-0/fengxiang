@@ -1,0 +1,15 @@
+# ---- 机器本地运行态，不入库（bootstrap 脚本会重建） ----
+third_party/MediaCrawler/.venv
+third_party/MediaCrawler/.build-constraints.txt
+third_party/MediaCrawler/browser_data/
+third_party/MediaCrawler/accounts/
+third_party/MediaCrawler/data/
+
+# ---- 构建产物与临时目录 ----
+.tmp/
+*.zip
+*.pyc
+__pycache__/
+
+# ---- 打包残留防递归 ----
+tv-opinion-atelier.zip

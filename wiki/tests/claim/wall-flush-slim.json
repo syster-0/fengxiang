@@ -1,0 +1,17 @@
+{
+  "concept": "claim/wall-flush-slim",
+  "triggers": [
+    "真贴墙是什么意思",
+    "0 黑边真的没有边吗",
+    "39.9mm 是挂上去后的厚度吗"
+  ],
+  "decoys": [
+    "电视买多大合适",
+    "98 吋怎么进门",
+    "挂墙要打几个孔"
+  ],
+  "negatives": [
+    "spec/wall-mount-tiers",
+    "claim/one-zone-beats-many"
+  ]
+}

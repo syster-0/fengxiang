@@ -1,0 +1,17 @@
+{
+  "concept": "voice/hot-consensus",
+  "triggers": [
+    "写一句能高赞的评论",
+    "用金句形式说选电视的方法",
+    "写个短评容易被转发的"
+  ],
+  "decoys": [
+    "写一条贴吧长贴",
+    "写一段参数拆解",
+    "写一条引战的短评"
+  ],
+  "negatives": [
+    "voice/tieba-long",
+    "voice/bili-geek"
+  ]
+}

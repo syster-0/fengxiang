@@ -1,0 +1,17 @@
+{
+  "concept": "pattern/geek-added-caveat",
+  "triggers": [
+    "参数怎么引用才严谨",
+    "同一个系列不同尺寸怎么讲清楚",
+    "怎么避免被误解成虚标"
+  ],
+  "decoys": [
+    "怎么给评论加个开头",
+    "怎么描述用户情绪",
+    "怎么收尾更有力"
+  ],
+  "negatives": [
+    "pattern/tieba-question-chain",
+    "pattern/consensus-anti-param"
+  ]
+}

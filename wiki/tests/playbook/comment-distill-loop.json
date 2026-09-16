@@ -1,0 +1,17 @@
+{
+  "concept": "playbook/comment-distill-loop",
+  "triggers": [
+    "评论蒸馏怎么做闭环",
+    "人味权重怎么持续维护",
+    "语料怎么采集和入库"
+  ],
+  "decoys": [
+    "怎么回复一条引战评论",
+    "怎么选适配的声部",
+    "怎么判断内容违不违规"
+  ],
+  "negatives": [
+    "playbook/tension-calibrated-reply",
+    "voice/bili-geek"
+  ]
+}

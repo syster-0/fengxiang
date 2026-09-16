@@ -1,0 +1,17 @@
+{
+  "concept": "playbook/tension-calibrated-reply",
+  "triggers": [
+    "这条评论该用什么语气回",
+    "怎么选合适的声部",
+    "张力定多少合适"
+  ],
+  "decoys": [
+    "语料怎么采集入库",
+    "人味分怎么算",
+    "权重怎么重算"
+  ],
+  "negatives": [
+    "playbook/comment-distill-loop",
+    "voice/hot-consensus"
+  ]
+}

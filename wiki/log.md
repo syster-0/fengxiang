@@ -1,0 +1,104 @@
+# OKF 操作日志（append-only）
+
+- 2026-09-16T14:45:00+08:00 | okf-new | source/tcl-sqd-product-corpus | 创建概念 Source（TCL SQD-Mini LED 电视产品全集（来源总览））
+- 2026-09-16T14:45:00+08:00 | okf-new | source/tcl-opinion-weekly-0916 | 创建概念 Source（TCL 全网舆情周报 2026-09-09~09-16（来源总览））
+- 2026-09-16T14:45:00+08:00 | okf-new | source/platform-live-corpus | 创建概念 Source（平台实测语料库（来源总览））
+- 2026-09-16T14:45:00+08:00 | okf-new | spec/sqd-three-core | 创建概念 Model Spec（SQD-Mini LED 三大核心技术栈）
+- 2026-09-16T14:45:00+08:00 | okf-new | spec/wanxiang-zone-inflation | 创建概念 Model Spec（万象分区与 RGB 控色分区的换算规则）
+- 2026-09-16T14:45:00+08:00 | okf-new | spec/sqd-lineup-2026 | 创建概念 Model Spec（SQD 七系列参数梯度（2026-09 基线））
+- 2026-09-16T14:45:00+08:00 | okf-new | spec/global-vs-window-gamut | 创建概念 Model Spec（全局色域与测试窗口色域的测量口径）
+- 2026-09-16T14:45:00+08:00 | okf-new | spec/xdr-sustained-vs-transient | 创建概念 Model Spec（绚彩 XDR：持久高亮与瞬时峰值的区别）
+- 2026-09-16T14:45:00+08:00 | okf-new | spec/wall-mount-tiers | 创建概念 Model Spec（挂架三档规格与「真贴墙」的构成条件）
+- 2026-09-16T14:45:00+08:00 | okf-new | glossary/miniled-three-lines | 创建概念 Glossary（Mini LED 三条技术线辨析）
+- 2026-09-16T14:45:00+08:00 | okf-new | glossary/mount-hardware-terms | 创建概念 Glossary（挂架与贴墙相关术语）
+- 2026-09-16T14:45:00+08:00 | okf-new | gap/sqd-physical-led-count | 创建概念 Knowledge Gap（缺口：SQD 物理灯珠数与分组方式未公开）
+- 2026-09-16T14:45:00+08:00 | okf-new | gap/install-service-standard | 创建概念 Knowledge Gap（缺口：贴墙类机型的安装服务标准未公开）
+- 2026-09-16T14:45:00+08:00 | okf-new | gap/rgb-vs-sqd-third-party-bench | 创建概念 Knowledge Gap（缺口：SQD 与 RGB 的第三方同条件横评缺失）
+- 2026-09-16T14:45:00+08:00 | okf-new | decision/not-rebut-industry-decline | 创建概念 Decision（决策：不正面反驳行业衰退叙事）
+- 2026-09-16T14:45:00+08:00 | okf-new | tension/sqd-vs-rgb-miniled | 创建概念 Tension Axis（对立轴：SQD 与 RGB-Mini LED 的路线之争）
+- 2026-09-16T14:45:00+08:00 | okf-new | tension/zone-count-vs-real-control | 创建概念 Tension Axis（对立轴：分区数量与实际控光能力）
+- 2026-09-16T14:45:00+08:00 | okf-new | tension/spec-sheet-vs-eyes | 创建概念 Tension Axis（对立轴：参数表与眼睛的实际观感）
+- 2026-09-16T14:45:00+08:00 | okf-new | tension/thin-body-vs-real-flush | 创建概念 Tension Axis（对立轴：平板薄宣传与真贴墙体验的落差）
+- 2026-09-16T14:45:00+08:00 | okf-new | tension/flagship-price-vs-value | 创建概念 Tension Axis（对立轴：高价旗舰与智商税叙事）
+- 2026-09-16T14:45:00+08:00 | okf-new | tension/industry-decline-vs-brand-growth | 创建概念 Tension Axis（对立轴：行业衰退叙事与品牌增长事实）
+- 2026-09-16T14:45:00+08:00 | okf-new | claim/one-zone-beats-many | 创建概念 Market Claim（厂商话术：「一区顶多区」）
+- 2026-09-16T14:45:00+08:00 | okf-new | claim/global-100-bt2020 | 创建概念 Market Claim（厂商话术：「100% BT.2020 全局高色域」）
+- 2026-09-16T14:45:00+08:00 | okf-new | claim/samsung-three-lies | 创建概念 Market Claim（厂商话术：「TCL 起诉三星 Mini LED 三大谎言」）
+- 2026-09-16T14:45:00+08:00 | okf-new | claim/wall-flush-slim | 创建概念 Market Claim（厂商话术：「真贴墙」「0 黑边」）
+- 2026-09-16T14:45:00+08:00 | okf-new | risk/absolute-superlative | 创建概念 Risk Rule（合规红线：绝对化用语与未证实定性）
+- 2026-09-16T14:45:00+08:00 | okf-new | risk/fabricated-stat | 创建概念 Risk Rule（合规红线：编造或转述无来源统计）
+- 2026-09-16T14:45:00+08:00 | okf-new | risk/competitor-defamation | 创建概念 Risk Rule（合规红线：无据贬损竞品）
+- 2026-09-16T14:45:00+08:00 | okf-new | risk/price-subsidy-promise | 创建概念 Risk Rule（合规红线：价格与国补承诺）
+- 2026-09-16T14:45:00+08:00 | okf-new | voice/tieba-long | 创建概念 Voice Persona（声部人格：贴吧长段追楼党）
+- 2026-09-16T14:45:00+08:00 | okf-new | voice/hot-consensus | 创建概念 Voice Persona（声部人格：高赞共识金句）
+- 2026-09-16T14:45:00+08:00 | okf-new | voice/bili-geek | 创建概念 Voice Persona（声部人格：B 站数码爱好者）
+- 2026-09-16T14:45:00+08:00 | okf-new | voice/douyin-conflict | 创建概念 Voice Persona（声部人格：抖音高对立度评论）
+- 2026-09-16T14:45:00+08:00 | okf-new | pattern/geek-admit-then-refute | 创建概念 Comment Pattern（评论范式：先承认再拆解（数码体））
+- 2026-09-16T14:45:00+08:00 | okf-new | pattern/geek-added-caveat | 创建概念 Comment Pattern（评论范式：括号补限定（数码体））
+- 2026-09-16T14:45:00+08:00 | okf-new | pattern/tieba-question-chain | 创建概念 Comment Pattern（评论范式：追问链（贴吧体））
+- 2026-09-16T14:45:00+08:00 | okf-new | pattern/douyin-verdict-opener | 创建概念 Comment Pattern（评论范式：判决式起手（抖音体））
+- 2026-09-16T14:45:00+08:00 | okf-new | pattern/consensus-anti-param | 创建概念 Comment Pattern（评论范式：反参数共识金句）
+- 2026-09-16T14:45:00+08:00 | okf-new | audience/geek-param-checker | 创建概念 Audience Segment（受众切片：参数核查型数码党）
+- 2026-09-16T14:45:00+08:00 | okf-new | audience/renovation-family | 创建概念 Audience Segment（受众切片：装修期家庭用户）
+- 2026-09-16T14:45:00+08:00 | okf-new | audience/mainstream-upgrader | 创建概念 Audience Segment（受众切片：主流价位换机人群）
+- 2026-09-16T14:45:00+08:00 | okf-new | audience/ads-exhausted-senior | 创建概念 Audience Segment（受众切片：被广告与套娃会员赶走的中老年用户）
+- 2026-09-16T14:45:00+08:00 | okf-new | signal/install-complaint-cluster | 创建概念 Signal（信号：安装/贴墙抱怨聚集）
+- 2026-09-16T14:45:00+08:00 | okf-new | signal/regulator-record | 创建概念 Signal（信号：监管平台记录（12315））
+- 2026-09-16T14:45:00+08:00 | okf-new | signal/templated-burst | 创建概念 Signal（信号：模板化批量生产内容（相似度骤增））
+- 2026-09-16T14:45:00+08:00 | okf-new | signal/spec-backfire | 创建概念 Signal（信号：参数口径反噬风险）
+- 2026-09-16T14:45:00+08:00 | okf-new | playbook/comment-distill-loop | 创建概念 Playbook（流程：评论蒸馏与人味权重闭环）
+- 2026-09-16T14:45:00+08:00 | okf-new | playbook/tension-calibrated-reply | 创建概念 Playbook（流程：张力校准与声部匹配回复）
+- 2026-09-16T14:45:00+08:00 | taste-calibrate | wiki | 按 taste.Score 实测回填 48 个概念的人味分与风险分
+- 2026-09-16T14:45:00+08:00 | taste-calibrate | wiki | 按 taste.Score 实测回填 48 个概念的人味分与风险分
+- 2026-09-16T14:45:00+08:00 | taste-calibrate | wiki | 按 taste.Score 实测回填 48 个概念的人味分与风险分
+- 2026-09-16T14:45:00+08:00 | taste-calibrate | wiki | 按 taste.Score 实测回填 48 个概念的人味分与风险分
+- 2026-09-16T14:40:13+08:00 | govern-recompute | audience/ads-exhausted-senior | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | audience/geek-param-checker | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | audience/mainstream-upgrader | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | audience/renovation-family | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | claim/global-100-bt2020 | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | claim/one-zone-beats-many | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | claim/samsung-three-lies | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | claim/wall-flush-slim | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | decision/not-rebut-industry-decline | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | gap/install-service-standard | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | gap/rgb-vs-sqd-third-party-bench | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | gap/sqd-physical-led-count | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | glossary/miniled-three-lines | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | glossary/mount-hardware-terms | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | pattern/consensus-anti-param | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | pattern/douyin-verdict-opener | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | pattern/geek-added-caveat | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | pattern/geek-admit-then-refute | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | pattern/tieba-question-chain | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | playbook/comment-distill-loop | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | playbook/tension-calibrated-reply | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | risk/absolute-superlative | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | risk/competitor-defamation | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | risk/fabricated-stat | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | risk/price-subsidy-promise | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | signal/install-complaint-cluster | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | signal/regulator-record | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | signal/spec-backfire | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | signal/templated-burst | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | source/platform-live-corpus | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | source/tcl-opinion-weekly-0916 | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | source/tcl-sqd-product-corpus | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | spec/global-vs-window-gamut | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | spec/sqd-lineup-2026 | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | spec/sqd-three-core | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | spec/wall-mount-tiers | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | spec/wanxiang-zone-inflation | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | spec/xdr-sustained-vs-transient | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | tension/flagship-price-vs-value | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | tension/industry-decline-vs-brand-growth | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | tension/spec-sheet-vs-eyes | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | tension/sqd-vs-rgb-miniled | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | tension/thin-body-vs-real-flush | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | tension/zone-count-vs-real-control | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | voice/bili-geek | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | voice/douyin-conflict | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | voice/hot-consensus | 五因子重算 weight
+- 2026-09-16T14:40:13+08:00 | govern-recompute | voice/tieba-long | 五因子重算 weight
+- 2026-09-16T14:45:00+08:00 | taste-calibrate | wiki | 按 taste.Score 实测回填 48 个概念的人味分与风险分
+- 2026-09-16T15:20:49+08:00 | crawl-feed | transcript/tieba-long-20260916 | 投喂 5 条 tieba-long 评论（1 个原始文件）

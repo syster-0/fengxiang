@@ -1,0 +1,17 @@
+{
+  "concept": "risk/competitor-defamation",
+  "triggers": [
+    "可以写三星是普通电视吗",
+    "对比海信会不会有风险",
+    "能不能说竞品虚标"
+  ],
+  "decoys": [
+    "怎么讲自己的技术优势",
+    "不同路线的原理差异怎么写",
+    "用户问该买哪个怎么答"
+  ],
+  "negatives": [
+    "claim/samsung-three-lies",
+    "risk/absolute-superlative"
+  ]
+}

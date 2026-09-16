@@ -1,0 +1,71 @@
+{
+  "name": "tv-opinion-atelier",
+  "version": "1.0.0",
+  "description": "TV industry public-opinion and comment atelier. Crawls Tieba / Bilibili / Douyin selection talk, distills it with cangjie RIA-TV++ into an OKF wiki, scores every concept for human tone, and keeps generating comments that read like a real person.",
+  "author": {
+    "name": "sycglier",
+    "email": "sycglier@users.noreply.github.com"
+  },
+  "keywords": [
+    "tv-industry",
+    "public-opinion",
+    "comment-generation",
+    "media-crawler",
+    "ai-tone-removal",
+    "okf",
+    "cangjie",
+    "distillation",
+    "weight-governance",
+    "go"
+  ],
+  "agents": ["./agents/tv-opinion-atelier.md"],
+  "skills": [
+    "./skills/tvop-ops",
+    "./skills/tvop-crawl",
+    "./skills/tvop-distill",
+    "./skills/tvop-okf",
+    "./skills/tvop-taste"
+  ],
+
+  "expertType": "agent",
+  "agentName": "tv-opinion-atelier",
+
+  "displayName": {
+    "en": "Qiongyan - TV Opinion Operations Officer",
+    "zh": "穹言 · 电视舆情运营官"
+  },
+  "profession": {
+    "en": "TV Industry Public-Opinion Operations Expert",
+    "zh": "电视行业舆情运营专家"
+  },
+  "displayDescription": {
+    "en": "Finds TV selection arguments across every platform, distills them into a wiki that carries weights, and keeps writing comments a real person could have typed.",
+    "zh": "贴吧、B站、抖音的高浓度评论蒸馏成人味语料，按数字权重持续生长，产出真人质感的电视评论与舆情策略。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "以「电视 选型」为关键词，扫一遍贴吧、B站和抖音的评论，蒸馏入库，然后告诉我这批语料的人味分和可用的声部。",
+    "en": "Crawl Tieba, Bilibili and Douyin with the keyword \"TV selection\", distill the comments into the wiki, then report the human-tone score and which voices are usable."
+  },
+  "plugin": "tv-opinion-atelier",
+  "tags": [
+    { "en": "Comment Distillation", "zh": "评论蒸馏" },
+    { "en": "Public Opinion Ops", "zh": "舆情运营" },
+    { "en": "Human-Tone Weighting", "zh": "人味权重" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "以「电视 选型」为关键词，扫一遍贴吧、B站和抖音的评论，蒸馏入库，然后告诉我这批语料的人味分和可用的声部。",
+      "en": "Crawl Tieba, Bilibili and Douyin with the keyword \"TV selection\", distill the comments into the wiki, then report the human-tone score and which voices are usable."
+    },
+    {
+      "zh": "读一遍知识库，为「65 寸 Mini LED 和 OLED 怎么选」写 20 条像真人的评论区回复，分声部输出，每条注明命中了哪条人味规则。",
+      "en": "Read the wiki and write 20 human-sounding replies for \"65-inch Mini LED vs OLED\", grouped by voice, each annotated with the human-tone rules it satisfies."
+    },
+    {
+      "zh": "跑一轮权重治理：审计全库、晋升高权重概念、归档零使用的，并报告人味分分布的变化。",
+      "en": "Run one governance round: audit the wiki, promote high-weight concepts, archive unused ones, and report how the human-tone distribution moved."
+    }
+  ]
+}

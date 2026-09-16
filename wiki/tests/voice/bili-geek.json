@@ -1,0 +1,17 @@
+{
+  "concept": "voice/bili-geek",
+  "triggers": [
+    "用 B 站数码党语气拆解 Q9M Pro",
+    "写一段参数实测评论",
+    "用测评区风格评价 SQD"
+  ],
+  "decoys": [
+    "写一条贴吧长贴",
+    "写一句高赞短句",
+    "写一条抖音引战评论"
+  ],
+  "negatives": [
+    "voice/hot-consensus",
+    "voice/douyin-conflict"
+  ]
+}

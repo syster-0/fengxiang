@@ -1,0 +1,17 @@
+{
+  "concept": "pattern/tieba-question-chain",
+  "triggers": [
+    "怎么拆穿营销话术又不违规",
+    "用追问的方式写条评论",
+    "怎么把话题拉回可验证的东西"
+  ],
+  "decoys": [
+    "怎么写一句高赞金句",
+    "怎么组织一段安装避坑经验",
+    "短评怎么写才有冲击力"
+  ],
+  "negatives": [
+    "pattern/consensus-anti-param",
+    "pattern/douyin-verdict-opener"
+  ]
+}

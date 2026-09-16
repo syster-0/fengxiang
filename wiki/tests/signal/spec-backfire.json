@@ -1,0 +1,17 @@
+{
+  "concept": "signal/spec-backfire",
+  "triggers": [
+    "起诉三星会不会有反噬",
+    "参数口径风险怎么防",
+    "被质疑实测量和标称不符怎么办"
+  ],
+  "decoys": [
+    "安装抱怨怎么核实",
+    "行业衰退要不要回应",
+    "声量虚高怎么判断"
+  ],
+  "negatives": [
+    "claim/samsung-three-lies",
+    "gap/sqd-physical-led-count"
+  ]
+}

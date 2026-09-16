@@ -1,0 +1,17 @@
+{
+  "concept": "risk/fabricated-stat",
+  "triggers": [
+    "35%用户吐槽这个数据能引用吗",
+    "文中可以写九成用户吗",
+    "这个百分比哪里来的"
+  ],
+  "decoys": [
+    "怎么描述样本量",
+    "窗口期该怎么写",
+    "官方参数能不能直接引用"
+  ],
+  "negatives": [
+    "risk/absolute-superlative",
+    "risk/price-subsidy-promise"
+  ]
+}

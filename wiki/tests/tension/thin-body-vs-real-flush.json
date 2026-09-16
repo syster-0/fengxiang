@@ -1,0 +1,17 @@
+{
+  "concept": "tension/thin-body-vs-real-flush",
+  "triggers": [
+    "T7M Pro 贴墙是不是骗人",
+    "安装为什么要加钱",
+    "平板薄和真贴墙有什么区别"
+  ],
+  "decoys": [
+    "98 吋进不了电梯怎么办",
+    "电视挂在承重墙上安全吗",
+    "电视柜要多宽"
+  ],
+  "negatives": [
+    "spec/wall-mount-tiers",
+    "signal/install-complaint-cluster"
+  ]
+}

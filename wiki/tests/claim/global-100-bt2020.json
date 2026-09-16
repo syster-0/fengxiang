@@ -1,0 +1,17 @@
+{
+  "concept": "claim/global-100-bt2020",
+  "triggers": [
+    "全局高色域是什么意思",
+    "100% BT.2020 是真的吗",
+    "为什么小窗口色域会掉"
+  ],
+  "decoys": [
+    "峰值亮度多少够用",
+    "对比度 7000:1 什么水平",
+    "屏幕反射率怎么看"
+  ],
+  "negatives": [
+    "spec/global-vs-window-gamut",
+    "claim/one-zone-beats-many"
+  ]
+}

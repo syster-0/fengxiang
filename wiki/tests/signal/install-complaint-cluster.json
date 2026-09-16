@@ -1,0 +1,17 @@
+{
+  "concept": "signal/install-complaint-cluster",
+  "triggers": [
+    "T7M Pro 安装抱怨怎么看",
+    "小红书这批帖子要不要处理",
+    "贴墙投诉到什么程度该升级"
+  ],
+  "decoys": [
+    "X11L 高价吐槽怎么处理",
+    "行业衰退叙事要不要回应",
+    "12315 记录怎么核实"
+  ],
+  "negatives": [
+    "signal/regulator-record",
+    "gap/install-service-standard"
+  ]
+}
